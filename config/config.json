@@ -82,9 +82,9 @@
         "appsec": {
             "enabled": true,
             "priority": 110,
+            "route": ["/home"],
             "module": {
                 "name": "lusca",
-                "route": ["home"],
                 "arguments": [
                     {
                         "csrf": true,
