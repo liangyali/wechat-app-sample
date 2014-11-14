@@ -72,7 +72,21 @@
                 "name": "kraken-js/middleware/500",
                 "arguments": [ "errors/500" ]
             }
-        }
+        },
+         "appsec": {
+            "enabled": false,
+            "priority": 110,
+            "module": {
+                "name": "lusca",
+                "arguments": [
+                    {
+                        "csrf": false,
+                        "xframe": "SAMEORIGIN",
+                        "p3p": false,
+                        "csp": false
+                    }
+                ]
+            }
 
     }
 }
