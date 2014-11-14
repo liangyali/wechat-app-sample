@@ -11,6 +11,7 @@ module.exports = function (router) {
      * 文本消息处理
      */
     wechat.on('text', function (session) {
+
         session.replyTextMessage("Received:" + session.incomingMessage.Content);
     });
 
