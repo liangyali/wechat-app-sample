@@ -9,4 +9,11 @@ module.exports = function (router) {
 
     });
 
+    /**
+     * test post data and csrf
+     */
+    router.post('/create', function (req, res) {
+        res.send('ok');
+    });
+
 };
