@@ -38,6 +38,7 @@ if (!module.parent) {
      * This is only done when this module is run directly, e.g. `node .` to allow for the
      * application to be used in tests without binding to a port or file descriptor.
      */
+
     server = http.createServer(app);
     server.listen(process.env.PORT || 18080);
     server.on('listening', function () {
