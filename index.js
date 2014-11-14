@@ -28,9 +28,6 @@ app.on('start', function () {
     console.log('Environment: %s', app.kraken.get('env:env'));
 });
 
-app.get('/',function(req,res){
-    res.send('OK');
-});
 
 
 /*
