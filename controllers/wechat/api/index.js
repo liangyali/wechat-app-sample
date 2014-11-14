@@ -1,9 +1,13 @@
 'use strict';
 
 var wechat = require('li-wechat')('yali');
+var lusca = require('lusca');
 
 module.exports = function (router) {
 
+    router.use('/',lusca({
+        csrf:false
+    }));
     router.use('/', wechat.process());
 
 
