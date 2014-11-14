@@ -87,7 +87,7 @@
                 "route": ["home"],
                 "arguments": [
                     {
-                        "csrf": false,
+                        "csrf": true,
                         "xframe": "SAMEORIGIN",
                         "p3p": false,
                         "csp": false
