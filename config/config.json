@@ -79,10 +79,13 @@
             }
         },
 
+        /**
+         * 安全模块相关
+         */
         "appsec": {
             "enabled": true,
             "priority": 110,
-            "route": ["/home"],
+            "route": "home",
             "module": {
                 "name": "lusca",
                 "arguments": [
@@ -104,7 +107,7 @@
                     {
                         "name": "sid",
                         "key": "",
-                        "secret": "keyboard cat",
+                        "secret": "testKey",
                         "cookie": {
                             "path": "/",
                             "httpOnly": true,
