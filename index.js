@@ -40,7 +40,7 @@ if (!module.parent) {
      */
 
     server = http.createServer(app);
-    server.listen(process.env.PORT || 18080);
+    server.listen(18080);
     server.on('listening', function () {
         console.log('Server listening on http://localhost:%d', this.address().port);
     });
