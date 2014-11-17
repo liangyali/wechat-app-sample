@@ -19,6 +19,6 @@ module.exports = function (router) {
         successRedirect: '/auth/wechat/success'}));
 
     router.get('/success', function (req, res) {
-        res.redirect(req.session.gongTo || '/home');
+        res.json({user: req.user || ''});
     });
 };
