@@ -1,5 +1,10 @@
 {
-
+    "wechat": {
+        "appid": "wx1903fcbc53deafe0",
+        "state": true,
+        "appsecret": "c7aa389c8a0f9adb8ba50b89c3f77636",
+        "callbackURL": "http://liangyali.duapp.com/auth/wechat/callback"
+    },
     "express": {
         "view cache": false,
         "view engine": "js",
@@ -79,9 +84,6 @@
             }
         },
 
-        /**
-         * 安全模块相关
-         */
         "appsec": {
             "enabled": true,
             "priority": 110,
@@ -119,7 +121,22 @@
                     }
                 ]
             }
+        },
+        "isAuthenticated": {
+            "enabled": true,
+            "priority": 111,
+            "module": {
+                "name":"path:./lib/auth",
+                "method": "isAuthenticated"
+            }
+        },
+        "injectUser": {
+            "enabled": true,
+            "priority": 112,
+            "module": {
+                "name":"path:./lib/auth",
+                "method": "injectUser"
+            }
         }
-
     }
 }

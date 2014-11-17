@@ -20,6 +20,7 @@
     "li-wechat": "^1.1.0",
     "localizr": "^0.1.0",
     "lusca": "^1.0.2",
+    "passport": "^0.2.1",
     "requirejs": "^2.1.15"
   },
   "devDependencies": {

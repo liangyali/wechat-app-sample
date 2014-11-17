@@ -11,7 +11,7 @@ module.exports = function (router) {
      */
     wechat.on('text', function (session) {
 
-        session.replyTextMessage("Received:" + session.incomingMessage.Content);
+        session.replyTextMessage("Received:http://liangyali.duapp.com/home" + session.incomingMessage.Content);
     });
 
     /**
