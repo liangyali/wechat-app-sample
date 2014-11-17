@@ -126,7 +126,7 @@
             "enabled": true,
             "priority": 111,
             "module": {
-                "name":"path:./lib/auth",
+                "name": "path:./lib/passport",
                 "method": "isAuthenticated"
             }
         },
@@ -134,7 +134,7 @@
             "enabled": true,
             "priority": 112,
             "module": {
-                "name":"path:./lib/auth",
+                "name": "path:./lib/passport",
                 "method": "injectUser"
             }
         }
