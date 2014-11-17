@@ -18,7 +18,7 @@ module.exports = function (router) {
         failureRedirect: '/auth/err',
         successRedirect: '/auth/success'}));
 
-    router.get('success', function (req, res) {
+    router.get('/success', function (req, res) {
         res.redirect(req.session.gongTo || '/home');
     });
 };
