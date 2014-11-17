@@ -21,6 +21,7 @@
     "localizr": "^0.1.0",
     "lusca": "^1.0.2",
     "passport": "^0.2.1",
+    "passport-wechat": "0.0.9",
     "requirejs": "^2.1.15"
   },
   "devDependencies": {
