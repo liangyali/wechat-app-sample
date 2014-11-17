@@ -9,9 +9,9 @@ module.exports = function (router) {
 
     router.get('/', passport.authenticate('wechat'));
 
-    router.post('/callback', function (req, res) {
+    router.get('/callback', function (req, res) {
         passport.authenticate('wechat', {
             failureRedirect: '/auth/err',
-            successRedirect: req.session.goingTo || '/profile'});
+            successRedirect: req.session.goingTo || '/home'});
     });
 };
