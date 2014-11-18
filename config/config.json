@@ -107,8 +107,7 @@
                 "name": "express-session",
                 "arguments": [
                     {
-                        "name": "sid",
-                        "key": "",
+                        "key": "sid",
                         "secret": "testKey",
                         "cookie": {
                             "path": "/",
