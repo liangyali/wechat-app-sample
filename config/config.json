@@ -2,7 +2,7 @@
     "wechat": {
         "appid": "wx1903fcbc53deafe0",
         "state": true,
-        "scope": "snsapi_base",
+        "scope": "snsapi_userinfo",
         "appsecret": "c7aa389c8a0f9adb8ba50b89c3f77636",
         "callbackURL": "http://liangyali.duapp.com/auth/wechat/callback"
     },
