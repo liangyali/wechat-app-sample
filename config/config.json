@@ -93,7 +93,7 @@
                 "name": "lusca",
                 "arguments": [
                     {
-                        "csrf": true,
+                        "csrf": false,
                         "xframe": "SAMEORIGIN",
                         "p3p": false,
                         "csp": false
@@ -108,7 +108,7 @@
                 "name": "express-session",
                 "arguments": [
                     {
-                        "key": "sid",
+                        "key": "_sid",
                         "secret": "testKey",
                         "cookie": {
                             "path": "/",
