@@ -1,5 +1,5 @@
 /**
- * wechat callbakc
+ * wechat redirect and callback
  */
 
 var passport = require('passport');
@@ -15,6 +15,6 @@ module.exports = function (router) {
     }));
 
     router.get('/success', function (req, res) {
-        res.json({user: req.user});
+        res.json({user: req._passport.session});
     });
 };
