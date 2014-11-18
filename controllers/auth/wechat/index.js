@@ -15,6 +15,6 @@ module.exports = function (router) {
     }));
 
     router.get('/success', function (req, res) {
-        res.json({user: req.user});
+        res.json({user: req.passport});
     });
 };
