@@ -66,6 +66,16 @@
             }
         },
 
+        "flash": {
+            "priority": 91,
+            "enabled": true,
+            "module": {
+                "name":"connect-flash",
+                "method": "flash"
+            }
+        },
+
+
 
         "fileNotFound": {
             "enabled": true,
@@ -101,27 +111,7 @@
                 ]
             }
         },
-        "session": {
-            "enabled": true,
-            "priority": 100,
-            "module": {
-                "name": "express-session",
-                "arguments": [
-                    {
-                        "key": "_sid",
-                        "secret": "testKey",
-                        "cookie": {
-                            "path": "/",
-                            "httpOnly": true,
-                            "maxAge": null
-                        },
-                        "resave": true,
-                        "saveUninitialized": true,
-                        "proxy": null
-                    }
-                ]
-            }
-        },
+
         "isAuthenticated": {
             "enabled": true,
             "priority": 111,
