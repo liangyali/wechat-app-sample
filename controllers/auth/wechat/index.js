@@ -12,7 +12,11 @@ module.exports = function (router) {
     router.get('/callback', function (req, res) {
         passport.authenticate('wechat', {
             failureRedirect: '/auth/err'}, function (req, res) {
-            res.redirect('/home');
+            res.redirect('/auth/wechat/success');
         });
+    });
+
+    router.get('/success', function (req, res) {
+        res.json({user: req.session});
     });
 };

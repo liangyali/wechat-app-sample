@@ -4,7 +4,8 @@
 module.exports = function (router) {
 
     router.get('/', function (req, res) {
-        res.json({user: req.user || ''});
+        req.session['user']='123';
+        res.json({user: req.session || ''});
     });
 
     /**
