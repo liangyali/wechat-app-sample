@@ -17,6 +17,6 @@ module.exports = function (router) {
     });
 
     router.get('/success', function (req, res) {
-        res.json({user: req.session});
+        res.json({user: req._passport});
     });
 };
