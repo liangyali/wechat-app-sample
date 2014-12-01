@@ -8,7 +8,7 @@ module.exports = function (router) {
      * 用户授权成功后的处理页面
      */
     router.get('/success', function (req, res) {
-        res.json(res.user);
+        res.json(req.user);
     });
 
     /**
