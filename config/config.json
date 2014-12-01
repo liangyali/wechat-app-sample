@@ -1,5 +1,5 @@
 {
-    "wechat": {
+    "wechat":{
         "appid": "wx1903fcbc53deafe0",
         "state": true,
         "scope": "snsapi_userinfo",
@@ -124,13 +124,6 @@
             "module": {
                 "name": "path:./lib/passport",
                 "method": "injectUser"
-            }
-        },
-        "test": {
-            "enabled": true,
-            "priority": 113,
-            "module": {
-                "name": "path:./lib/test"
             }
         }
     }
